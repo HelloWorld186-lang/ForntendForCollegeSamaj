@@ -60,6 +60,8 @@ const Userpage = () => {
 
   if (!profile) {return <div className='bg-gray-900'></div>};
 
+  console.log(profile);
+
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <Toast message={message} type={message.includes('Failed') ? 'error' : 'info'} />
